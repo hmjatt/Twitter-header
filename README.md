@@ -44,7 +44,7 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	
 3. ### Twitter Client
 	- [x] Install **Twitter API V2** package using `npm i twitter-api-v2`.
-	- [x] Create a sample `twitterClient.js`.
+	- [x] Create a `twitterClient.js` file.
 	- [x] Install **Dotenv** package using `npm install dotenv --save`.
 	- [x] Create a project at `https://developer.twitter.com/en/portal/projects/new`.
 	- [x] Create a `.env` file and copy **API Keys** to that file.
@@ -53,6 +53,7 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [x] Delete or comment `testTweet()` method because it worked and is no longer needed.
 
 4. ### Get Followers
+	- [x] Create a `twitterController.js` file which collects data from **Twitter API**.
 
 5. ### Save Follower Images
 
