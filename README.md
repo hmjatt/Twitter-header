@@ -35,6 +35,8 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 ## Steps I followed to complete this project
 
 1. ### Twitter Elevated Access
+	- [x] Create an application on `Twitter Developer Portal`
+	- [x] Apply for `Elevated access` if you don't have one
 
 2. ### Setup Node App
 	- [x] Install **NPM** using `npm init -y` to skip questions.
