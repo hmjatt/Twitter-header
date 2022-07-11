@@ -68,7 +68,8 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [x] Install **Axios** package using `npm i axios`, which performs our HTTP requests.
 	- [x] Install **Sharp** package using `npm i sharp`, which modifies fetched images and save it to our **File System**.
 	- [x] Create `saveImage()` method in `imageController.js` which fetches profile picture of followers using axios and save them to our **images** folder.
-	- [x] Call `getProfileImageUrl()` and `saveImage()` methods in `index.js` module. 
+	- [x] Call `getProfileImageUrl()` and `saveImage()` methods in `index.js` module.
+	<!-- - [x] Test `generateHeader()` wrapper function(IT WORKS :fireworks:) -->
 
 6. ### Create Banner
 
