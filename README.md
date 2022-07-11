@@ -1,11 +1,11 @@
 # Twitter-header
-A Node script that display profile pictures of new followers on a twitter header
+A Node script to create Dynamic Twitter Header
 
 
-<!-- ![This is an image](https://github.com/hmjatt/hmjatt.github.io/blob/master/images/battleship/Page-1%20updated.png)
+<!-- ![This is an image](https://github.com/hmjatt/hmjatt.github.io/blob/master/images/battleship/Page-1%20updated.png) -->
 
 
-This project is created to practice Test Driven Development(TDD) in JavaScript by creating a Battleship game using Jest(JS Testing Framework). Babel and Webpack are also used in this project 	:cityscape: Feel free to reach me at [Twitter](https://twitter.com/hmjatt/) :flying_disc: -->
+This project is created to create a Twitter Bot in NodeJS that fetches 3 latest followers using Twitter API V2 and create a Dynamic Twitter Header and upload it to Twitter. Dotenv, Axios, Sharp, Cron NPM packages are also used in this project 	:cityscape: Feel free to reach me at [Twitter](https://twitter.com/hmjatt/) :flying_disc:
 
 
 
