@@ -1,5 +1,5 @@
 const client = require("./public/modules/twitterClient");
-
+const {getFollowers} = require("./public/modules/twitterController")
 
 
 // document.addEventListener("DOMContentLoaded", getFollowers);
@@ -9,3 +9,5 @@ const client = require("./public/modules/twitterClient");
 // }
 
 // testTweet()
+
+getFollowers();
