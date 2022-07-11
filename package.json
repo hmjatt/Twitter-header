@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/hmjatt/Twitter-header/issues"
   },
-  "homepage": "https://github.com/hmjatt/Twitter-header#readme"
+  "homepage": "https://github.com/hmjatt/Twitter-header#readme",
+  "dependencies": {
+    "twitter-api-v2": "^1.12.3"
+  }
 }
