@@ -28,13 +28,21 @@ This project is created to practice Test Driven Development(TDD) in JavaScript b
 
 ```
 	npm install
-	
+
 ```
 
 	
 ## Steps I followed to complete this project
 
-<!-- 1. ### Setup Environment Setup -->
+### 1. Setup Node
+### 2. Twitter Elevated Access
+### 3. Setup Node App
+### 4. Twitter Client
+### 5. Get Followers
+### 6. Save Follower Images
+### 7. Create Banner
+### 8. Update Banner
+### 9. Cron Job
 
 
 
