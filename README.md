@@ -33,10 +33,17 @@ This project is created to practice Test Driven Development(TDD) in JavaScript b
 
 ## Links to content that helped me with this project
 
-<!-- 1. The Odin Project
-	- [Project: Battleship](https://www.theodinproject.com/lessons/node-path-javascript-battleship)
-	- [More Testing](https://www.theodinproject.com/lessons/node-path-javascript-more-testing)
- -->
+1. Freecodecamp
+	- [Article by Spruce Emmanuel](https://www.freecodecamp.org/news/create-a-dynamic-twitter-header/)
+
+2. Twitter
+	- [Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard)
+
+3. Canva
+	- [Twitter Header Template](https://www.canva.com/twitter/templates/headers/)
+
+4. Hosting
+
 
 #### Quote
 <!-- 
