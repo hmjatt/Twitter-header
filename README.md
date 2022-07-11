@@ -22,12 +22,9 @@ This project is created to practice Test Driven Development(TDD) in JavaScript b
 	- Axios
 	- Sharp
 	- Twitter Develeoper Portal
+	- Cron
 
-Twitter API Client: https://www.npmjs.com/package/twitter...
-Twitter Developer Platform: https://developer.twitter.com
-Cron Package: https://www.npmjs.com/package/cron
-Sharp Package: https://www.npmjs.com/package/sharp
-Axios Package: https://www.npmjs.com/package/axios
+
 	
 ## Steps I followed to complete this project
 
@@ -37,16 +34,25 @@ Axios Package: https://www.npmjs.com/package/axios
 
 ## Links to content that helped me with this project
 
-1. Freecodecamp
-	- [Article by Spruce Emmanuel](https://www.freecodecamp.org/news/create-a-dynamic-twitter-header/)
+1. Dom the dev
+	- [Article on Dev.to](https://dev.to/dom_the_dev/build-an-automatically-updating-twitter-header-with-nodejs-and-twitter-api-2g2d)
+	- [Youtube Video](https://www.youtube.com/watch?v=jl9OKxoqVcA)
+	- [GitHub Repo](https://github.com/dom-the-dev/twitter-banner)
 
 2. Twitter
 	- [Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard)
-
+	
 3. Canva
 	- [Twitter Header Template](https://www.canva.com/twitter/templates/headers/)
 
-4. Hosting
+4. NPM Packages
+	- [Twitter API v2](https://www.npmjs.com/package/twitter-api-v2)
+	- [Dotenv Package](https://www.npmjs.com/package/dotenv)
+	- [Cron Package](https://www.npmjs.com/package/cron)
+	- [Sharp Package](https://www.npmjs.com/package/sharp)
+	- [Axios Package](https://www.npmjs.com/package/axios)
+
+
 
 
 #### Quote
