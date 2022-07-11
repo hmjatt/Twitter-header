@@ -1,6 +1,8 @@
 // const client = require("./public/modules/twitterClient");
-const {getFollowers, getProfileImageUrl} = require("./public/modules/twitterController")
-
+const {
+    getFollowers,
+    getProfileImageUrl,
+} = require("./public/modules/twitterController");
 
 // TEST TWEETER API
 // async function testTweet() {
@@ -9,8 +11,7 @@ const {getFollowers, getProfileImageUrl} = require("./public/modules/twitterCont
 
 // testTweet()
 
-
 // Wrapper Function which fetches followers, images, save images and update our header dynamically
 async function generateHeader() {
-    const followers = await getFollowers()
+    const followers = await getFollowers();
 }
