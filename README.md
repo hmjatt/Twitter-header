@@ -27,6 +27,8 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- Twitter Develeoper Portal
 	- Cron
 
+<!-- - Jimp -->
+
 ## Usage
 
 ```
@@ -71,9 +73,13 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [x] Call `getProfileImageUrl()` and `saveImage()` methods in `index.js` module.
 	- [x] Test `generateHeader()` wrapper function and check if images are fetched(IT WORKS :partying_face:)
 
-6. ### Create Banner
+6. ### Create Header
+	<!-- - [x] Install **Jimp** package using `npm install --save jimp`, which will help us create **Dynamic Twitter Header**. -->
+	- [x] Create a `createHeader()` method in `imageController.js` module which creates `dynamicTwitterHeader.png` using `headerTemplate.png` and fetched profile picture of our **followers**.
 
-7. ### Update Banner
+
+
+7. ### Update Header
 
 8. ### Cron Job
 
@@ -98,6 +104,7 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [Cron Package](https://www.npmjs.com/package/cron)
 	- [Sharp Package](https://www.npmjs.com/package/sharp)
 	- [Axios Package](https://www.npmjs.com/package/axios)
+	- [Jimp Package](https://www.npmjs.com/package/jimp)
 
 
 

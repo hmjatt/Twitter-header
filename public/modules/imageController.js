@@ -9,4 +9,6 @@ async function saveImage(name, url) {
     await sharp(data).resize(100, 100).toFile(`public/images/${name}.png`);
 }
 
+
+
 module.exports = { saveImage };
