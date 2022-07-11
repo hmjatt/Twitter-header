@@ -34,23 +34,21 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	
 ## Steps I followed to complete this project
 
-1. ### Setup Node
+1. ### Twitter Elevated Access
 
-2. ### Twitter Elevated Access
+2. ### Setup Node App
+	- [x] Install **NPM** using `npm init -y` to skip questions.
+3. ### Twitter Client
 
-3. ### Setup Node App
+4. ### Get Followers
 
-4. ### Twitter Client
+5. ### Save Follower Images
 
-5. ### Get Followers
+6. ### Create Banner
 
-6. ### Save Follower Images
+7. ### Update Banner
 
-7. ### Create Banner
-
-8. ### Update Banner
-
-9. ### Cron Job
+8. ### Cron Job
 
 
 
