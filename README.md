@@ -40,6 +40,8 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 
 2. ### Setup Node App
 	- [x] Install **NPM** using `npm init -y` to skip questions.
+	- [x] create `index.js` to test node.
+	
 3. ### Twitter Client
 
 4. ### Get Followers
