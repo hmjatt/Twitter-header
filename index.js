@@ -4,6 +4,8 @@ const {
     getProfileImageUrl,
 } = require("./public/modules/twitterController");
 
+const {saveImage} = require("./public/modules/imageController");
+
 // TEST TWEETER API
 // async function testTweet() {
 //     await client.v2.tweet("Hi, I am building a twitter bot!")
@@ -20,3 +22,6 @@ async function generateHeader() {
         await saveImage(follower.id, url)
     }
 }
+
+
+generateHeader();
