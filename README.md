@@ -70,8 +70,8 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 
 
 #### Quote
-<!-- 
-    “It always seems impossible until it's done.”
-    — Nelson Mandela -->
+
+    “Keep your face always toward the sunshine - and shadows will fall behind you.”
+    — Walt Whitman
 >  	
 > :package: :yarn: :watch:
