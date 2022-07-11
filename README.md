@@ -47,7 +47,7 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	
 3. ### Twitter Client
 	- [x] Install **Twitter API V2** package using `npm i twitter-api-v2`.
-	- [x] Create a `twitterClient.js` file.
+	- [x] Create a `twitterClient.js` module which connects to **Twitter API V2**.
 	- [x] Install **Dotenv** package using `npm install dotenv --save`.
 	- [x] Create a project at `https://developer.twitter.com/en/portal/projects/new`.
 	- [x] Create a `.env` file and copy **API Keys** to that file.
@@ -56,14 +56,15 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [x] Delete or comment `testTweet()` method because it worked and is no longer needed.
 
 4. ### Get Followers
-	- [x] Create a `twitterController.js` file which collects data from **Twitter API**.
+	- [x] Create a `twitterController.js` module which collects data from **Twitter API**.
 	- [x] Get **Twitter ID** from [Tweeterid](https://tweeterid.com/)
 	- [x] Create `getFollowers()` method in `twitterController.js` which returns **3 latest followers**
 	- [x] Test `getFollowers()` method(IT WORKS :fireworks:)
 	- [x] Create a wrapper function `generateHeader()` in `index.js` which allows us to fetch followers, their images, save images and update our header dynamically.
 
 5. ### Save Follower Images
-	- [x] Create `getProfileImageUrl()` method in `twitterController.js` which returns **profile image URL from followers**
+	- [x] Create `getProfileImageUrl()` method in `twitterController.js` which returns **profile image URL from followers**.
+	- [x] Create `imageController.js` module which contains methods to manipulate images.
 
 6. ### Create Banner
 
