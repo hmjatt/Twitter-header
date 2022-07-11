@@ -1,5 +1,5 @@
-const client = require("./public/modules/twitterClient");
-const {getFollowers} = require("./public/modules/twitterController")
+// const client = require("./public/modules/twitterClient");
+const {getFollowers, getProfileImageUrl} = require("./public/modules/twitterController")
 
 
 // TEST TWEETER API
