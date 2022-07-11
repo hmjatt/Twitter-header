@@ -56,6 +56,7 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [x] Create a `twitterController.js` file which collects data from **Twitter API**.
 	- [x] Get **Twitter ID** from [Tweeterid](https://tweeterid.com/)
 	- [x] Create `getFollowers()` method which returns **3 latest followers**
+	- [x] Test `getFollowers()` method(IT WORKS :fireworks:)
 5. ### Save Follower Images
 
 6. ### Create Banner
