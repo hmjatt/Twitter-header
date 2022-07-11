@@ -8,4 +8,9 @@ async function getFollowers() {
 	return getLatestFollowers;
 }
 
-module.exports = {getFollowers}
+async function getProfileImageUrl(user_id) {
+    const {profile_image_url} = await client.v1.user({user_id})
+    return profile_image_url
+}
+
+module.exports = {getFollowers, getProfileImageUrl}
