@@ -2,12 +2,15 @@ const client = require("./public/modules/twitterClient");
 const {getFollowers} = require("./public/modules/twitterController")
 
 
-// document.addEventListener("DOMContentLoaded", getFollowers);
-
+// TEST TWEETER API
 // async function testTweet() {
 //     await client.v2.tweet("Hi, I am building a twitter bot!")
 // }
 
 // testTweet()
 
-getFollowers();
+
+// Wrapper Function which fetches followers, images, save images and update our header dynamically
+async function generateHeader() {
+    const followers = await getFollowers()
+}
