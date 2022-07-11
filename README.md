@@ -24,6 +24,12 @@ This project is created to practice Test Driven Development(TDD) in JavaScript b
 	- Twitter Develeoper Portal
 	- Cron
 
+## Usage
+
+```
+	npm install
+	
+```
 
 	
 ## Steps I followed to complete this project
