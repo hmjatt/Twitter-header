@@ -66,6 +66,7 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [x] Create `getProfileImageUrl()` method in `twitterController.js` which returns **profile image URL from followers**.
 	- [x] Create `imageController.js` module which contains methods to manipulate images.
 	- [x] Install **Axios** package using `npm i axios`, which performs our HTTP requests.
+	- [x] Install **Sharp** package using `npm i sharp`, which modifies fetched images and save it to our **File System**.
 
 6. ### Create Banner
 
