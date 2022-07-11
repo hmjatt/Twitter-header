@@ -48,6 +48,8 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [x] Install **Dotenv** package using `npm install dotenv --save`.
 	- [x] Create a project at `https://developer.twitter.com/en/portal/projects/new`.
 	- [x] Create a `.env` file and copy **API Keys** to that file.
+	- [x] Create a `testTweet()` method inside `index.js` to test API.
+	- [x] Check Twitter App if it works, it should tweet the string inside method(IT WORKS :tada:)
 
 4. ### Get Followers
 
