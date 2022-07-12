@@ -77,7 +77,6 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [x] Create a `createHeader()` method in `imageController.js` module which creates `dynamicTwitterHeader.png` using `headerTemplate.png` and fetched profile picture of our **followers**.
 	- [x] Test `createHeader()` method and check if **dynamicTwitterHeader.png** is successfuly created(IT WORKS :tada:)
 
-
 7. ### Update Header
 	- [x] Create a `updateHeader()` method in `twitterController.js` module which uploads **dynamicTwitterHeader.png** to Twitter.
 	- [x] Test `updateHeader()` method and check if **dynamicTwitterHeader.png** is successfuly uploaded to Twitter(IT WORKS wooohoooo :partying_face:)
