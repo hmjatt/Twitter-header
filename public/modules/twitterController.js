@@ -13,10 +13,13 @@ async function getProfileImageUrl(user_id) {
 }
 
 async function updateHeader() {
-    await client.v1.updateAccountProfileBanner("./final.png", {
-        width: 1500,
-        height: 500
-    })
+    await client.v1.updateAccountProfileBanner(
+        "./public/images/headers/dynamicTwitterHeader.png",
+        {
+            width: 1500,
+            height: 500,
+        }
+    );
 }
 
 module.exports = { getFollowers, getProfileImageUrl, updateHeader };
