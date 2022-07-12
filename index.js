@@ -36,5 +36,3 @@ async function generateHeader() {
     await createHeader();
     await updateHeader();
 }
-
-generateHeader();
