@@ -30,35 +30,24 @@ async function saveImage(name, url) {
     );
 }
 
-// async function createHeader() {
-//     const header = await Jimp.read("../images/headers/images.png")
-//     const files = await fsPromises.readdir("./images/profilePics")
+async function createHeader() {
+    const header = await Jimp.read("../images/headers/twitterHeader.png")
+    const files = await fsPromises.readdir("../images/profilePics")
 
-//     let index = 0;
-//     for (const avatar of files) {
-//         const imgPath = `./images/${avatar}`
-//         const image = await Jimp.read(imgPath)
+    let index = 0;
+    for (const avatar of files) {
+        const imgPath = `../images/profilePics/${avatar}`
+        const image = await Jimp.read(imgPath)
 
-//         const position = 475 + index * (100 + 10);
-//         banner.composite(image, position, 380);
+        const position = 475 + index * (100 + 10);
+        header.composite(image, position, 380);
 
-//         index++
-//     }
+        index++
+    }
 
-//     await banner.writeAsync("./final.png");
+    await header.writeAsync("../images/headers/dynamicTwitterHeader.png");
 
-// }
-
-
-
-// async function saveImage(name, url) {
-//     const { data } = await axios.get(url, {
-//         responseType: "arraybuffer",
-//     });
-
-//     await sharp(data).resize(100, 100).toFile(`public/images/${name}.png`);
-// }
+}
 
 
-
-module.exports = { saveImage};
+module.exports = { saveImage, createHeader};
