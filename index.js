@@ -4,7 +4,7 @@ const {
     getProfileImageUrl,
 } = require("./public/modules/twitterController");
 
-const {saveImage} = require("./public/modules/imageController");
+const { saveImage, createHeader } = require("./public/modules/imageController");
 
 // TEST TWEETER API
 // async function testTweet() {
@@ -17,11 +17,13 @@ const {saveImage} = require("./public/modules/imageController");
 async function generateHeader() {
     const followers = await getFollowers();
 
-	for(const follower of followers) {
-        const url = await getProfileImageUrl(follower.id)
-        await saveImage(follower.id, url)
+    for (const follower of followers) {
+        const url = await getProfileImageUrl(follower.id);
+        await saveImage(follower.id, url);
     }
-}
 
+	await createHeader();
+
+}
 
 generateHeader();
