@@ -88,10 +88,11 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 
 ## Links to content that helped me with this project
 
-1. Dom the dev
-	- [Article on Dev.to](https://dev.to/dom_the_dev/build-an-automatically-updating-twitter-header-with-nodejs-and-twitter-api-2g2d)
-	- [Youtube Video](https://www.youtube.com/watch?v=jl9OKxoqVcA)
-	- [GitHub Repo](https://github.com/dom-the-dev/twitter-banner)
+1. Tutorials
+	- [Article on Dev.to by Dom The Dev](https://dev.to/dom_the_dev/build-an-automatically-updating-twitter-header-with-nodejs-and-twitter-api-2g2d)
+	- [Youtube Video by Dom The Dev](https://www.youtube.com/watch?v=jl9OKxoqVcA)
+	- [GitHub Repo by Dom The Dev](https://github.com/dom-the-dev/twitter-banner)
+	- [Freecodecamp Article by Spruce Emmanuel](https://www.freecodecamp.org/news/create-a-dynamic-twitter-header/)
 
 2. Twitter
 	- [Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard)
