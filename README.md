@@ -83,6 +83,7 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [x] Test `updateHeader()` method and check if **dynamicTwitterHeader.png** is successfuly uploaded to Twitter(IT WORKS wooohoooo :partying_face:)
 
 8. ### Cron Job
+	- [x] Install **Cron** package using `npm install cron`, to create a **CronJob** which generates **dynamicTwitterHeader.png** at a specified time.
 
 
 
