@@ -1,5 +1,9 @@
-const axios = require("axios");
-const sharp = require("sharp");
+const axios = require("axios")
+const sharp = require("sharp")
+const Jimp = require("jimp")
+const fs = require("fs")
+const fsPromises = fs.promises
+
 
 async function saveImage(name, url) {
     await axios({
@@ -20,11 +24,30 @@ async function saveImage(name, url) {
                                 blend: "dest-in",
                             },
                         ])
-                        .toFile(`public/images/${name}.png`)
+                        .toFile(`public/images/profilePics/${name}.png`)
                 );
             })
     );
 }
+
+// async function createHeader() {
+//     const header = await Jimp.read("../images/headers/images.png")
+//     const files = await fsPromises.readdir("./images/profilePics")
+
+//     let index = 0;
+//     for (const avatar of files) {
+//         const imgPath = `./images/${avatar}`
+//         const image = await Jimp.read(imgPath)
+
+//         const position = 475 + index * (100 + 10);
+//         banner.composite(image, position, 380);
+
+//         index++
+//     }
+
+//     await banner.writeAsync("./final.png");
+
+// }
 
 
 
@@ -38,4 +61,4 @@ async function saveImage(name, url) {
 
 
 
-module.exports = { saveImage, createHeader };
+module.exports = { saveImage};

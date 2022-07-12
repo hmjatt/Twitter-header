@@ -75,6 +75,7 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 6. ### Create Header
 
 	- [x] Install **Jimp** package using `npm install --save jimp`, which will help us create **Dynamic Twitter Header**.
+	- [x] Import required dependencies on top of `imageController.js` module.
 	- [x] Create a `createHeader()` method in `imageController.js` module which creates `dynamicTwitterHeader.png` using `headerTemplate.png` and fetched profile picture of our **followers**.
 
 
