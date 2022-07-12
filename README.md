@@ -1,12 +1,12 @@
 # Twitter-header
 A Node script to create Dynamic Twitter Header
 
+## [Live Preview](https://twitter.com/hmjatt/)
 
 ![This is an image](https://github.com/hmjatt/Twitter-header/blob/main/public/images/headers/twitterHeader.png)
 
-## [Live Preview](https://twitter.com/hmjatt/)
 
-This project is created to create a Twitter Bot in NodeJS that fetches 3 latest followers using Twitter API V2 and create a Dynamic Twitter Header and upload it to Twitter. Dotenv, Axios, Sharp, Cron NPM packages are also used in this project :bird: Feel free to reach me at [Twitter](https://twitter.com/hmjatt/) :robot:
+This project is created to create a Twitter Bot in NodeJS that fetches 3 latest followers using Twitter API V2 and create a Dynamic Twitter Header and upload it to Twitter. Dotenv, Axios, Sharp, Cron NPM packages are also used in this project.**CronJob** is run once every 15 minute in order to avoid making too many requests to **Twitter API**. :bird: Feel free to reach me at [Twitter](https://twitter.com/hmjatt/) :robot:
 
 
 
@@ -86,7 +86,7 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [x] Import **const CronJob = require("cron").CronJob** dependency on top of `index.js`.
 	- [x] Create a new object **job** from the **CronJob class** which calls `generateHeader()` wrapper function once per minute.
 	- [x] Test `job` object and check if **dynamicTwitterHeader.png** is successfuly created and uploaded to Twitter(IT WORKS yeehaw :tada:)
-	- [x] Change **CronJob** to run every 15 minute in order to avoid making too many requests to **Twitter API**.
+	- [x] Change **CronJob** to run once every 15 minute in order to avoid making too many requests to **Twitter API**.
 
 
 
