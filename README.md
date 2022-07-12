@@ -26,7 +26,7 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- Sharp
 	- Twitter Develeoper Portal
 	- Cron
-
+	
 <!-- - Jimp -->
 
 ## Usage
@@ -106,7 +106,7 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [Cron Package](https://www.npmjs.com/package/cron)
 	- [Sharp Package](https://www.npmjs.com/package/sharp)
 	- [Axios Package](https://www.npmjs.com/package/axios)
-	- [Jimp Package](https://www.npmjs.com/package/jimp)
+	<!-- - [Jimp Package](https://www.npmjs.com/package/jimp) -->
 
 
 
