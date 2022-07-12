@@ -2,6 +2,7 @@
 const {
     getFollowers,
     getProfileImageUrl,
+    updateHeader,
 } = require("./public/modules/twitterController");
 
 const { saveImage, createHeader } = require("./public/modules/imageController");
@@ -22,8 +23,8 @@ async function generateHeader() {
         await saveImage(follower.id, url);
     }
 
-	await createHeader();
-
+    await createHeader();
+    await updateHeader();
 }
 
 generateHeader();
