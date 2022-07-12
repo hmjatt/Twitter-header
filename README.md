@@ -89,7 +89,6 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [x] Change **CronJob** to run once every 15 minute in order to avoid making too many requests to **Twitter API**.
 
 
-
 ## Links to content that helped me with this project
 
 1. Tutorials
