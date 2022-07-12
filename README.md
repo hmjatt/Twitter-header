@@ -88,6 +88,9 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [x] Test `job` object and check if **dynamicTwitterHeader.png** is successfuly created and uploaded to Twitter(IT WORKS yeehaw :tada:)
 	- [x] Change **CronJob** to run once every 15 minute in order to avoid making too many requests to **Twitter API**.
 
+9. ### Deploy to Heroku
+	- [x] Followed [this](https://medium.com/nerd-for-tech/create-twitter-bot-using-nodejs-and-deploy-on-heroku-dd6ec31534f4) medium article by Rushikesh Mhetre to Deploy our bot on **Heroku** and have it run remotely
+
 
 ## Links to content that helped me with this project
 
@@ -111,6 +114,8 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [Axios Package](https://www.npmjs.com/package/axios)
 	- [Jimp Package](https://www.npmjs.com/package/jimp)
 
+5. Deploy to Heroku
+	[Medium article by Rushikesh Mhetre](https://medium.com/nerd-for-tech/create-twitter-bot-using-nodejs-and-deploy-on-heroku-dd6ec31534f4) 
 
 
 
