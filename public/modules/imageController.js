@@ -1,9 +1,8 @@
-const axios = require("axios")
-const sharp = require("sharp")
-const Jimp = require("jimp")
-const fs = require("fs")
-const fsPromises = fs.promises
-
+const axios = require("axios");
+const sharp = require("sharp");
+const Jimp = require("jimp");
+const fs = require("fs");
+const fsPromises = fs.promises;
 
 async function saveImage(name, url) {
     await axios({
@@ -24,30 +23,28 @@ async function saveImage(name, url) {
                                 blend: "dest-in",
                             },
                         ])
-                        .toFile(`public/images/profilePics/${name}.png`)
+                        .toFile(`./public/images/profilePics/${name}.png`)
                 );
             })
     );
 }
 
 async function createHeader() {
-    const header = await Jimp.read("../images/headers/twitterHeader.png")
-    const files = await fsPromises.readdir("../images/profilePics")
+    const header = await Jimp.read("./public/images/headers/twitterHeader.png");
+    const files = await fsPromises.readdir("./public/images/profilePics");
 
     let index = 0;
     for (const avatar of files) {
-        const imgPath = `../images/profilePics/${avatar}`
-        const image = await Jimp.read(imgPath)
+        const imgPath = `./public/images/profilePics/${avatar}`;
+        const image = await Jimp.read(imgPath);
 
-        const position = 475 + index * (100 + 10);
-        header.composite(image, position, 380);
+        const position = 1135 + index * (100 + 10);
+        header.composite(image, position, 360);
 
-        index++
+        index++;
     }
 
-    await header.writeAsync("../images/headers/dynamicTwitterHeader.png");
-
+    await header.writeAsync("./public/images/headers/dynamicTwitterHeader.png");
 }
 
-
-module.exports = { saveImage, createHeader};
+module.exports = { saveImage, createHeader };
