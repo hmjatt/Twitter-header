@@ -4,6 +4,7 @@ A Node script to create Dynamic Twitter Header
 
 ![This is an image](https://github.com/hmjatt/Twitter-header/blob/main/public/images/headers/twitterHeader.png)
 
+## [Live Preview](https://twitter.com/hmjatt/)
 
 This project is created to create a Twitter Bot in NodeJS that fetches 3 latest followers using Twitter API V2 and create a Dynamic Twitter Header and upload it to Twitter. Dotenv, Axios, Sharp, Cron NPM packages are also used in this project :bird: Feel free to reach me at [Twitter](https://twitter.com/hmjatt/) :robot:
 
