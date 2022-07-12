@@ -85,8 +85,8 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 	- [x] Install **Cron** package using `npm install cron`, to create a **CronJob** which generates **dynamicTwitterHeader.png** at a specified time.
 	- [x] Import **const CronJob = require("cron").CronJob** dependency on top of `index.js`.
 	- [x] Create a new object **job** from the **CronJob class** which calls `generateHeader()` wrapper function once per minute.
-	- [x] Test `job` object and check if **dynamicTwitterHeader.png** is successfuly created and uploaded to Twitter(IT WORKS wooohoooo :tada:)
-
+	- [x] Test `job` object and check if **dynamicTwitterHeader.png** is successfuly created and uploaded to Twitter(IT WORKS yeehaw :tada:)
+	- [x] Change **CronJob** to run every 15 minute in order to avoid making too many requests to **Twitter API**.
 
 
 
