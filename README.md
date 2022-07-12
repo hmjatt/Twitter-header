@@ -118,7 +118,9 @@ npm install
 
 5. Deploy to Heroku
 	- [Heroku Pricing](https://www.heroku.com/pricing#containers)
-	- [Medium article by Rushikesh Mhetre](https://medium.com/nerd-for-tech/create-twitter-bot-using-nodejs-and-deploy-on-heroku-dd6ec31534f4) 
+	- [Medium article by Rushikesh Mhetre](https://medium.com/nerd-for-tech/create-twitter-bot-using-nodejs-and-deploy-on-heroku-dd6ec31534f4)
+	- [Medium article by Sachin Sarawgi](https://medium.com/@codesprintpro/twitter-bot-using-nodejs-c72a2a50628d)
+	
 
 
 
