@@ -6,7 +6,7 @@ A Node script to create Dynamic Twitter Header
 ![This is an image](https://github.com/hmjatt/Twitter-header/blob/main/public/images/headers/twitterHeader.png)
 
 
-This project is created to create a Twitter Bot in NodeJS that fetches 3 latest followers using Twitter API V2 and create a Dynamic Twitter Header and upload it to Twitter. Dotenv, Axios, Sharp, Cron NPM packages are also used in this project.**CronJob** is run once every 2 hours in order to avoid making too many requests to **Twitter API** and not to run out of **dyno hours** on **Heroku**. :bird: Feel free to reach me at [Twitter](https://twitter.com/hmjatt/) :robot:
+This project is created to create a Twitter Bot in NodeJS that fetches 3 latest followers using Twitter API V2 and create a Dynamic Twitter Header and upload it to Twitter. Dotenv, Axios, Sharp, Cron NPM packages are also used in this project.**CronJob** is run once every 15 MINUTES in order to avoid making too many requests to **Twitter API** and not to run out of **dyno hours** on **Heroku**. :bird: Feel free to reach me at [Twitter](https://twitter.com/hmjatt/) :robot:
 
 
 
@@ -87,7 +87,7 @@ npm install
 	- [x] Import **const CronJob = require("cron").CronJob** dependency on top of `index.js`.
 	- [x] Create a new object **job** from the **CronJob class** which calls `generateHeader()` wrapper function once per minute.
 	- [x] Test `job` object and check if **dynamicTwitterHeader.png** is successfuly created and uploaded to Twitter(IT WORKS yeehaw :tada:)
-	- [x] Change **CronJob** to run once every 2 hours in order to avoid making too many requests to **Twitter API** and not to run out of **dyno hours** on **Heroku**.
+	- [x] Change **CronJob** to run once every 15 MINUTES in order to avoid making too many requests to **Twitter API** and not to run out of **dyno hours** on **Heroku**.
 
 9. ### Deploy to Heroku
 	- [x] Signed up for **Heroku** free tier(500 Dyno Hours/ month)

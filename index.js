@@ -17,7 +17,7 @@ const CronJob = require("cron").CronJob;
 // testTweet()
 
 console.log("starting node app");
-const job = new CronJob("* */2 * * *", async function () {
+const job = new CronJob("*/15 * * * *", async function () {
     console.log("start generating banner");
     generateHeader();
 });
