@@ -1,4 +1,3 @@
-// const client = require("./public/modules/twitterClient");
 const {
     getFollowers,
     getProfileImageUrl,
@@ -9,8 +8,9 @@ const { saveImage, createHeader } = require("./public/modules/imageController");
 
 const CronJob = require("cron").CronJob;
 
-const testFolder = './public/images/profilePics/';
-const fs = require('fs');
+const testFolder = "./public/images/profilePics/";
+const fs = require("fs");
+const path = require('path');
 
 // TEST TWEETER API
 // async function testTweet() {
@@ -29,6 +29,21 @@ job.start();
 
 // Wrapper Function which fetches followers, images, save images and update our header dynamically
 async function generateHeader() {
+
+	// delete all profile pictures of follwers when script runs, so that we only 
+	//grab the latest profile pictures and it helps keep our directory clean
+
+	fs.readdir(testFolder, (err, files) => {
+        if (err) throw err;
+
+        for (const file of files) {
+            fs.unlink(path.join(testFolder, file), (err) => {
+                if (err) throw err;
+            });
+        }
+    });
+
+
     const followers = await getFollowers();
 
     for (const follower of followers) {
@@ -36,28 +51,6 @@ async function generateHeader() {
         await saveImage(follower.id, url);
     }
 
-
-	// get all files
-
-	// fs.readdir(testFolder, (err, files) => {
-	// 	files.forEach(file => {
-	// 	  console.log(file);
-	// 	});
-	//   });
-
-	//get latest modified file
-	fs.readdir(testFolder ,function(err, list){
-		list.forEach(function(file){
-			console.log(file);
-			stats = fs.statSync(file);
-			console.log(stats.mtime);
-			console.log(stats.ctime);
-		})
-	})
-
-	// GET 3 LATEST FILES AND DELETE REST
-
-
-    // await createHeader();
-    // await updateHeader();
+    await createHeader();
+    await updateHeader();
 }
