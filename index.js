@@ -9,8 +9,8 @@ const { saveImage, createHeader } = require("./public/modules/imageController");
 
 const CronJob = require("cron").CronJob;
 
-const testFolder = './public/images/profilePics/';
-const fs = require('fs');
+const testFolder = "./public/images/profilePics/";
+const fs = require("fs");
 
 // TEST TWEETER API
 // async function testTweet() {
@@ -38,13 +38,32 @@ async function generateHeader() {
 
     // get all files
 
+	let listArray = [];
+
     fs.readdir(testFolder, (err, files) => {
-    	files.forEach(file => {
-    	  console.log(file);
-		  const { birthtime } = fs.statSync(`${testFolder}${file}`)
-		  console.log(birthtime);
-    	});
-      });
+        files.forEach((file) => {
+            
+            //   const { birthtime } = fs.stats.birthtimeMs(`${testFolder}${file}`)
+            //   console.log(birthtime);
+            fs.lstat(`${testFolder}${file}`, (err, stats) => {
+                if (err) throw err;
+
+                // The timestamp when the file
+                // is created (in MS)
+				// listArray.push(file);
+				listArray.push(stats.birthtimeMs)
+				console.log(file, listArray.sort());
+                
+            });
+			
+			
+        });
+    });
+
+	
+
+
+	
 
     //get latest modified file
     // fs.readdir(testFolder ,function(err, list){
@@ -59,14 +78,13 @@ async function generateHeader() {
     // GET 3 LATEST FILES AND DELETE REST
 
     //get names of all files
-	// try {
-	// 	const dir = await opendir('./public/images/profilePics/');
-	// 	for await (const dirent of dir)
-	// 	  console.log(dirent.name);
-	//   } catch (err) {
-	// 	console.error(err);
-	//   }
-    
+    // try {
+    // 	const dir = await opendir('./public/images/profilePics/');
+    // 	for await (const dirent of dir)
+    // 	  console.log(dirent.name);
+    //   } catch (err) {
+    // 	console.error(err);
+    //   }
 
     // await createHeader();
     // await updateHeader();
