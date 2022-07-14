@@ -1,4 +1,3 @@
-// const client = require("./public/modules/twitterClient");
 const {
     getFollowers,
     getProfileImageUrl,
@@ -34,15 +33,15 @@ async function generateHeader() {
 	// delete all profile pictures of follwers when script runs, so that we only 
 	//grab the latest profile pictures and it helps keep our directory clean
 
-	// fs.readdir(testFolder, (err, files) => {
-    //     if (err) throw err;
+	fs.readdir(testFolder, (err, files) => {
+        if (err) throw err;
 
-    //     for (const file of files) {
-    //         fs.unlink(path.join(testFolder, file), (err) => {
-    //             if (err) throw err;
-    //         });
-    //     }
-    // });
+        for (const file of files) {
+            fs.unlink(path.join(testFolder, file), (err) => {
+                if (err) throw err;
+            });
+        }
+    });
 
 
     const followers = await getFollowers();
@@ -52,6 +51,6 @@ async function generateHeader() {
         await saveImage(follower.id, url);
     }
 
-    // await createHeader();
-    // await updateHeader();
+    await createHeader();
+    await updateHeader();
 }
