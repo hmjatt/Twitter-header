@@ -36,27 +36,37 @@ async function generateHeader() {
         await saveImage(follower.id, url);
     }
 
+    // get all files
 
-	// get all files
+    fs.readdir(testFolder, (err, files) => {
+    	files.forEach(file => {
+    	  console.log(file);
+		  const { birthtime } = fs.statSync(`${testFolder}${file}`)
+		  console.log(birthtime);
+    	});
+      });
 
-	// fs.readdir(testFolder, (err, files) => {
-	// 	files.forEach(file => {
-	// 	  console.log(file);
-	// 	});
-	//   });
+    //get latest modified file
+    // fs.readdir(testFolder ,function(err, list){
+    // 	list.forEach(function(file){
+    // 		console.log(file);
+    // 		stats = fs.statSync(file);
+    // 		console.log(stats.mtime);
+    // 		console.log(stats.ctime);
+    // 	})
+    // })
 
-	//get latest modified file
-	fs.readdir(testFolder ,function(err, list){
-		list.forEach(function(file){
-			console.log(file);
-			stats = fs.statSync(file);
-			console.log(stats.mtime);
-			console.log(stats.ctime);
-		})
-	})
+    // GET 3 LATEST FILES AND DELETE REST
 
-	// GET 3 LATEST FILES AND DELETE REST
-
+    //get names of all files
+	// try {
+	// 	const dir = await opendir('./public/images/profilePics/');
+	// 	for await (const dirent of dir)
+	// 	  console.log(dirent.name);
+	//   } catch (err) {
+	// 	console.error(err);
+	//   }
+    
 
     // await createHeader();
     // await updateHeader();
