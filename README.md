@@ -93,6 +93,9 @@ npm install
 	- [x] Signed up for **Heroku** free tier(500 Dyno Hours/ month)
 	- [x] Followed [this](https://medium.com/nerd-for-tech/create-twitter-bot-using-nodejs-and-deploy-on-heroku-dd6ec31534f4) medium article by Rushikesh Mhetre to Deploy our bot on **Heroku** and have it run remotely
 
+10. ### Delete old profile pictures
+	- [x] Only keep profile pictures of 3 latest followers and delete the rest.
+
 
 ## Links to content that helped me with this project
 
