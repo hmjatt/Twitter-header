@@ -20,7 +20,7 @@ const path = require('path');
 // testTweet()
 
 console.log("starting node app");
-const job = new CronJob("*/15 * * * *", async function () {
+const job = new CronJob("* * * * *", async function () {
     console.log("start generating header");
     generateHeader();
 });
