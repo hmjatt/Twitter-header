@@ -92,6 +92,8 @@ npm install
 9. ### Deploy to Heroku
 	- [x] Signed up for **Heroku** free tier(500 Dyno Hours/ month)
 	- [x] Followed [this](https://medium.com/nerd-for-tech/create-twitter-bot-using-nodejs-and-deploy-on-heroku-dd6ec31534f4) medium article by Rushikesh Mhetre to Deploy our bot on **Heroku** and have it run remotely
+	- [x] Add a `Procfile` to repo and `worker: node index.js` as a command. Disable `Web: npm start` dyno and enable `worker: node index.js` dyno in **Resources** tab under **Dashboard** to start generating header every 15 minutes :smile:
+
 
 10. ### Delete old profile pictures
 	- [x] Only keep profile pictures of 3 latest followers and delete the rest.
@@ -121,6 +123,7 @@ npm install
 
 5. Deploy to Heroku
 	- [Heroku Pricing](https://www.heroku.com/pricing#containers)
+	- [Heroku Docs(Define a Procfile)](https://devcenter.heroku.com/articles/getting-started-with-nodejs#define-a-procfile)
 	- [Medium article by Rushikesh Mhetre](https://medium.com/nerd-for-tech/create-twitter-bot-using-nodejs-and-deploy-on-heroku-dd6ec31534f4)
 	- [Medium article by Sachin Sarawgi](https://medium.com/@codesprintpro/twitter-bot-using-nodejs-c72a2a50628d)
 	
