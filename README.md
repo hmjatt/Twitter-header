@@ -32,6 +32,8 @@ This project is created to create a Twitter Bot in NodeJS that fetches 3 latest 
 ```
 npm install
 
+node index.js // to start generating header
+
 ```
 
 	
